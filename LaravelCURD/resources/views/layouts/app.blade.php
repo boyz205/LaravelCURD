@@ -12,7 +12,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('bootstrap-4.0.0/dist/css/bootstrap.min.css') }}" >
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -34,6 +34,14 @@
 <body>
 
 <div class="container">
+
+    <h2>
+        <a class="btn btn-info" href="{{ url('/') }}" style="color: black">Danh mục</a>
+        <a class="btn btn-info" href="{{ url('/product') }}" style="color: black">Sản phẩm</a>
+        <a class="btn btn-info" href="{{ url('/comment') }}" style="color: black">Comment</a>
+
+    </h2>
+
     <h1>@yield('title')</h1>
     <div class="row">
         <div class="col-sm-12">
